@@ -1,0 +1,19 @@
+{
+  "name": "redux-basico",
+  "version": "1.0.0",
+  "description": "Proyecto para comprender las bases de redux con TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/JuanWebDeveloper/Redux-TypeScript.git"
+  },
+  "author": "Juan Vargas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuanWebDeveloper/Redux-TypeScript/issues"
+  },
+  "homepage": "https://github.com/JuanWebDeveloper/Redux-TypeScript#readme"
+}
