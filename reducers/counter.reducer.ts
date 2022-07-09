@@ -1,6 +1,6 @@
-import { Action } from './actions';
+import { Action } from '../model/action';
 
-export const reducer = (state = 10, action: Action) => {
+export const counterReducer = (state = 10, action: Action) => {
   switch (action.type) {
     case 'INCREMENT':
       return (state += 1);
@@ -13,6 +13,9 @@ export const reducer = (state = 10, action: Action) => {
 
     case 'DIVIDE':
       return state / action.payload;
+
+    case 'RESET':
+      return (state = 0);
 
     default:
       return state;

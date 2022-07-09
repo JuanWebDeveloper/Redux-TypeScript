@@ -1,28 +1,12 @@
-import { Action } from './actions';
-import { reducer } from './reducers';
+import { decrementAction, divideAction, incrementAction, multiplyAction, resetAction } from './actions/operations.actions';
+import { counterReducer } from './reducers/counter.reducer';
 
-const incrementAction: Action = {
-  type: 'INCREMENT',
-};
+console.log(counterReducer(30, incrementAction)); // 31
 
-console.log(reducer(30, incrementAction)); // 31
+console.log(counterReducer(15, decrementAction)); // 14
 
-const decrementAction: Action = {
-  type: 'DECREMENT',
-};
+console.log(counterReducer(10, multiplyAction)); // 50
 
-console.log(reducer(15, decrementAction)); // 14
+console.log(counterReducer(25, divideAction)); // 5
 
-const multiplyAction: Action = {
-  type: 'MULTIPLY',
-  payload: 5,
-};
-
-console.log(reducer(10, multiplyAction)); // 50
-
-const divideAction: Action = {
-  type: 'DIVIDE',
-  payload: 5,
-};
-
-console.log(reducer(25, divideAction)); // 5
+console.log(counterReducer(10, resetAction)); // 0
