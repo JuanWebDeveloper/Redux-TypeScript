@@ -4,6 +4,6 @@ export interface Action {
   payload?: any;
 }
 
-const incrementAction: Action = {
-  type: 'INCREMENT',
-};
+// const incrementAction: Action = {
+//   type: 'INCREMENT',
+// };
