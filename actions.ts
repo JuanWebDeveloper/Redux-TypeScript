@@ -1,5 +1,5 @@
 // Interfaz para las acciones.
-interface Action {
+export interface Action {
   type: string;
   payload?: any;
 }
