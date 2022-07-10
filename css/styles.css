@@ -1,0 +1,24 @@
+body {
+  background-color: #00001a;
+}
+
+.bg-p {
+  background-color: #21293960;
+  backdrop-filter: blur(15px);
+}
+
+.bg-s {
+  background-color: #0e131b90;
+}
+
+.bg-t {
+  background-color: #15162c80;
+  backdrop-filter: blur(50px);
+}
+
+.at {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

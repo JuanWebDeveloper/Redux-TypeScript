@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contador Con Redux Basic</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="container at">
+      <div class="row">
+        <div class="col bg-p rounded-3 py-3 text-center">
+          <h1 class="text-white">Contador Desarrollado Con TypeScript y "Redux".</h1>
+          <h5 class="text-white-50">
+            <i>
+              Este es un proyecto en el cual busque recrear una arquitectura muy básica basado en la manera en que funciona Redux, esto con el fin de
+              practicar y reforzar mis conocimientos.
+            </i>
+          </h5>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col bg-s rounded-3 py-3 text-center">
+          <h1 class="text-white">Contador: <span class="text-primary" id="count"></span></h1>
+          <h5 class="text-white-50">
+            <i>
+              Este es un contador simple, el cual se encarga de incrementar y decrementar una variable, la cual se encuentra en el estado de la
+              aplicación.
+            </i>
+          </h5>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="col bg-t rounded-3 py-2 text-center">
+          <h1 class="text-white">Acciones</h1>
+          <div class="d-flex justify-content-center mt-4">
+            <button class="btn btn-primary mx-3" id="increment">Incrementar</button>
+            <button class="btn btn-dark mx-3" id="decrement">Decrementar</button>
+            <button class="btn btn-danger mx-3" id="reset">Resetear</button>
+            <button class="btn btn-light mx-3" id="multiply">Multiplicar</button>
+            <button class="btn btn-secondary mx-3" id="divide">Dividir</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>
